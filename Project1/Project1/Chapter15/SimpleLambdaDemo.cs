@@ -27,8 +27,6 @@ namespace Project1.Chapter15
             {
                 if (isEven(i)) Console.WriteLine(i + " четное.");
             }
-
-
         }
     }
 }
