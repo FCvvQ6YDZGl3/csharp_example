@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project1", "Project1\Project1.csproj", "{0C28E2DD-79D8-4938-A6C1-7B44A7242A58}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter16", "Chapter16", "{B4F96470-E315-44C6-8B34-E5544FECF10E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleStrategyGame", "ConsoleStrategyGame\ConsoleStrategyGame.csproj", "{4B3AA489-B03E-4447-81C4-641A9ED2C51B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,10 @@ Global
 		{0C28E2DD-79D8-4938-A6C1-7B44A7242A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C28E2DD-79D8-4938-A6C1-7B44A7242A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C28E2DD-79D8-4938-A6C1-7B44A7242A58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B3AA489-B03E-4447-81C4-641A9ED2C51B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B3AA489-B03E-4447-81C4-641A9ED2C51B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B3AA489-B03E-4447-81C4-641A9ED2C51B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B3AA489-B03E-4447-81C4-641A9ED2C51B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,16 @@
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.exe
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.deps.json
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.runtimeconfig.json
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.runtimeconfig.dev.json
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.dll
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ref\ConsoleStrategyGame.dll
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.pdb
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.csproj.AssemblyReference.cache
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.AssemblyInfoInputs.cache
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.AssemblyInfo.cs
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.csproj.CoreCompileInputs.cache
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.dll
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ref\ConsoleStrategyGame.dll
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.pdb
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.genruntimeconfig.cache

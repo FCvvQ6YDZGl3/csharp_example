@@ -17,7 +17,7 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            SimpleLambdaDemo runableObject = new SimpleLambdaDemo();
+            EventDemo5 runableObject = new EventDemo5();
             runableObject.run();
             Console.ReadKey();
         }
