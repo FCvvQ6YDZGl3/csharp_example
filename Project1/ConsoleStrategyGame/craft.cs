@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
+using System.IO;
 
 class Match
 {
+    delegate bool GameOver();
+    GameOver gameOver;
+    private uint matchDuration = 0;
     private string answerPlayer;
     private Timer timer;
     public Location[] locations;
@@ -16,11 +20,13 @@ class Match
         setTimer();
         createLocations();
         createPlayers();
+        DefineTerminationСonditions();
 
         notifyWhenTheGameStarts();
         viewFreeLocation();
 
         waitForTheCommand();
+
     }
     public void waitForTheCommand()
     {
@@ -29,11 +35,11 @@ class Match
             answerPlayer = Console.ReadLine();
             switch (answerPlayer)
             {
-                case "build farm" :
-                    if ((locations.Where(location => location.GetType() == "Field" && location.free)).Count() > 0)
-                        player.build(new Farm(), (locations.Where(location => location.GetType() == "Field" && location.free)).FirstOrDefault());
-                    else
-                        Console.WriteLine("Нельзя построить больше ферм!");
+                case "build farm":
+                    player.buildFarm();
+                    break;
+                case "build sawmill":
+                    player.buildSawmill();
                     break;
                 case "view free location":
                     viewFreeLocation();
@@ -48,12 +54,23 @@ class Match
     {
         Console.WriteLine("Food {0}   Wood {1}", player.food.value, player.wood.value);
     }
-    public void notifyWhenTheGameStarts()
+    private void notifyWhenTheGameStarts()
     {
         Console.WriteLine("Начало игры");
     }
+    private void notifyWhenTheGameIsOver()
+    {
+        Console.WriteLine("Конец игры");
+    }
     private void OnTimedEvent(Object Source, System.Timers.ElapsedEventArgs e)
     {
+        matchDuration++;
+        if (CheckGameEnd())
+        {
+            timer.Stop();
+            notifyWhenTheGameIsOver();
+            
+        }
         player.getRes();
     }
     private void setTimer()
@@ -88,6 +105,14 @@ class Match
             }
         }
         Console.WriteLine("Всего локаций свободно {0}, Лес {1}, Поля {2}", Location.countFree, forest, field);
+    }
+    private void DefineTerminationСonditions()
+    {
+        gameOver = () => player.food.value > 200;
+    }
+    private bool CheckGameEnd()
+    {
+        return gameOver();
     }
 }
 class Location
@@ -138,6 +163,20 @@ class Player
         food.value +=food.increase;
         wood.value +=wood.increase;
     }
+    public void buildFarm()
+    {
+        if ((locations.Where(location => location.GetType() == "Field" && location.free)).Count() > 0)
+            this.build(new Farm(), (locations.Where(location => location.GetType() == "Field" && location.free)).FirstOrDefault());
+        else
+            Console.WriteLine("Нельзя построить больше ферм!");
+    }
+    public void buildSawmill()
+    {
+        if ((locations.Where(location => location.GetType() == "Forest" && location.free)).Count() > 0)
+            this.build(new Sawmill(), (locations.Where(location => location.GetType() == "Forest" && location.free)).FirstOrDefault());
+        else
+            Console.WriteLine("Нельзя построить больше лесопилок!");
+    }
 }
 abstract class Structure
 {
@@ -157,7 +196,7 @@ class Sawmill : Structure
     public const int wood = 10;
     public override void increaseResourceExtraction(Player p)
     {
-        p.food.increase = +wood;
+        p.wood.increase = +wood;
     }
 }
 
@@ -165,17 +204,23 @@ abstract class Resource
 {
     public int value;
     public int increase;
-    public Resource()
+    public Resource(int v = 0)
     {
-        value = 0;
+        value = v;
         increase = 0;
     }
 }
 class Food : Resource
 {
+    public Food() : base()
+    {
+    }
 }
 class Wood : Resource
 {
+    public Wood() : base(120)
+    { 
+    }
 }
 
 class Building

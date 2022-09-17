@@ -1,0 +1,16 @@
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.exe
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.deps.json
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.runtimeconfig.json
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.runtimeconfig.dev.json
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.dll
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\ref\KeyEventDemo.dll
+C:\projects\C# Examples\Project1\KeyEventDemo\bin\Debug\net5.0\KeyEventDemo.pdb
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.csproj.AssemblyReference.cache
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.AssemblyInfoInputs.cache
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.AssemblyInfo.cs
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.csproj.CoreCompileInputs.cache
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.dll
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\ref\KeyEventDemo.dll
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.pdb
+C:\projects\C# Examples\Project1\KeyEventDemo\obj\Debug\net5.0\KeyEventDemo.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.exe
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.deps.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.runtimeconfig.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.runtimeconfig.dev.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\ref\NSDemo.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\bin\Debug\net5.0\NSDemo.pdb
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.csproj.AssemblyReference.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.AssemblyInfoInputs.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.AssemblyInfo.cs
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.csproj.CoreCompileInputs.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\ref\NSDemo.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.pdb
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo\obj\Debug\net5.0\NSDemo.genruntimeconfig.cache

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project1.craft;
 using Project1.Chapter12;
 using Project1.Chapter13;
 using Project1.Chapter14;
@@ -17,7 +16,7 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            EventDemo5 runableObject = new EventDemo5();
+            LambdaEventDemo runableObject = new LambdaEventDemo();
             runableObject.run();
             Console.ReadKey();
         }

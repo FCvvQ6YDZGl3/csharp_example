@@ -1,0 +1,16 @@
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.exe
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.deps.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.runtimeconfig.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.runtimeconfig.dev.json
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\ref\NSDemo2.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.pdb
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.csproj.AssemblyReference.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.AssemblyInfoInputs.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.AssemblyInfo.cs
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.csproj.CoreCompileInputs.cache
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\ref\NSDemo2.dll
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.pdb
+C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.genruntimeconfig.cache
