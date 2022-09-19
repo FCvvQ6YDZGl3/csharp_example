@@ -16,7 +16,7 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            LambdaEventDemo runableObject = new LambdaEventDemo();
+            Graph_classic runableObject = new Graph_classic();
             runableObject.run();
             Console.ReadKey();
         }

@@ -1,0 +1,16 @@
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.csproj.AssemblyReference.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.AssemblyInfoInputs.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.AssemblyInfo.cs
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.csproj.CoreCompileInputs.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.exe
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.deps.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.runtimeconfig.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.runtimeconfig.dev.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\ref\WhyAliasQualifier.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\bin\Debug\net5.0\WhyAliasQualifier.pdb
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\ref\WhyAliasQualifier.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.pdb
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\WhyAliasQualifier\obj\Debug\net5.0\WhyAliasQualifier.genruntimeconfig.cache

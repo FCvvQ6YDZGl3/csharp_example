@@ -14,3 +14,19 @@ C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NS
 C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\ref\NSDemo2.dll
 C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.pdb
 C:\Users\test-ASRock-87\source\repos\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.genruntimeconfig.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.exe
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.deps.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.runtimeconfig.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.runtimeconfig.dev.json
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\ref\NSDemo2.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\bin\Debug\net5.0\NSDemo2.pdb
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.csproj.AssemblyReference.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.AssemblyInfoInputs.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.AssemblyInfo.cs
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.csproj.CoreCompileInputs.cache
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\ref\NSDemo2.dll
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.pdb
+C:\projects\C# Examples\NamespacePreprocessorAssembly[Chapter16]\NSDemo2\obj\Debug\net5.0\NSDemo2.genruntimeconfig.cache

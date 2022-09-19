@@ -17,7 +17,7 @@ namespace Project1.base_algoritm
         private static Regex regex = new Regex("^[0-9]+$", RegexOptions.Compiled);
         public void run()
         {
-            shortestWay();
+            bypassInBreadthList();
         }
         private void shortestWay()
         {
@@ -98,9 +98,12 @@ namespace Project1.base_algoritm
                     {1, 0, 0, 0, 0, 1, 0},
                 };
             int[] nodes = new int[7];
+
             for (int i = 0; i < 7; i++)
                 nodes[i] = 0;
-            Queue.Enqueue(3);
+
+            Queue.Enqueue(0);
+
             while (Queue.Count != 0)
             {
                 int node = Queue.Dequeue();
@@ -111,6 +114,43 @@ namespace Project1.base_algoritm
                     {
                         Queue.Enqueue(j);
                         nodes[j] = 1;
+                    }
+                }
+                Console.WriteLine(node + 1);
+            }
+        }
+        
+        private void bypassInBreadthList()
+        {
+            Queue<int> Queue = new Queue<int>();
+            List<int>[] mas = new List<int>[]
+                {
+                    new List<int> {2, 3, 7},
+                    new List<int> {1, 3, 4},
+                    new List<int> {1, 2},
+                    new List<int> {2, 5},
+                    new List<int> {4, 6},
+                    new List<int> {5, 7},
+                    new List<int> {1, 6}
+                };
+            int[] nodes = new int[7];
+
+            for (int i = 0; i < 7; i++)
+                nodes[i] = 0;
+
+            Queue.Enqueue(0);
+            List<int> listNode;
+            while (Queue.Count != 0)
+            {
+                int node = Queue.Dequeue();
+                nodes[node] = 2;
+                listNode = mas[node];
+                foreach (int item in listNode)
+                {
+                    if (nodes[item-1] == 0)
+                    {
+                        Queue.Enqueue(item-1);
+                        nodes[item-1] = 1;
                     }
                 }
                 Console.WriteLine(node + 1);
