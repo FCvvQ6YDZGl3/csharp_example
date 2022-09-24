@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseIs", "RTTI_Reflection_Attributes[Chapter17]\UseIs.csproj", "{D60924F9-7269-4574-96B4-4E684447FA9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60924F9-7269-4574-96B4-4E684447FA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60924F9-7269-4574-96B4-4E684447FA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60924F9-7269-4574-96B4-4E684447FA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60924F9-7269-4574-96B4-4E684447FA9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3089E857-7B97-4D39-82C5-C3D55A5D2950}
+	EndGlobalSection
+EndGlobal
