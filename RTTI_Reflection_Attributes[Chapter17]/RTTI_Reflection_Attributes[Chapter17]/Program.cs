@@ -21,6 +21,7 @@ namespace RTTI_Reflection_Attributes_Chapter17_
                 Console.WriteLine("B имеет тип B");
             if (a is object)
                 Console.WriteLine("a имеет тип object");
+            Console.ReadKey();
         }
     }
 }

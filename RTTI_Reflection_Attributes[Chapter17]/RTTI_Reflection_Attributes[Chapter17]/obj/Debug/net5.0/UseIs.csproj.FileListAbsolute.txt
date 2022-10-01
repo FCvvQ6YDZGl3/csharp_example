@@ -13,3 +13,19 @@ C:\projects\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Cha
 C:\projects\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\ref\UseIs.dll
 C:\projects\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.pdb
 C:\projects\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.genruntimeconfig.cache
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.exe
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.deps.json
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.runtimeconfig.json
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.runtimeconfig.dev.json
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.dll
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\ref\UseIs.dll
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\bin\Debug\net5.0\UseIs.pdb
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.csproj.AssemblyReference.cache
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.GeneratedMSBuildEditorConfig.editorconfig
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.AssemblyInfoInputs.cache
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.AssemblyInfo.cs
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.csproj.CoreCompileInputs.cache
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.dll
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\ref\UseIs.dll
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.pdb
+C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\obj\Debug\net5.0\UseIs.genruntimeconfig.cache

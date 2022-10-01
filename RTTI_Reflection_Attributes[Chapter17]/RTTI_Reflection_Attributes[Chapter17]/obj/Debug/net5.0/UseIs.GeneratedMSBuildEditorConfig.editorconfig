@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = RTTI_Reflection_Attributes_Chapter17_
-build_property.ProjectDir = C:\projects\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\
+build_property.ProjectDir = C:\projects\C# Examples\RTTI_Reflection_Attributes[Chapter17]\RTTI_Reflection_Attributes[Chapter17]\

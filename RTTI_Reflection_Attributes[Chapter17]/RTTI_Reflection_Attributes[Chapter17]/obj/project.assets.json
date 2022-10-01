@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projects\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\UseIs.csproj",
+      "projectUniqueName": "C:\\projects\\C# Examples\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\UseIs.csproj",
       "projectName": "UseIs",
-      "projectPath": "C:\\projects\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\UseIs.csproj",
+      "projectPath": "C:\\projects\\C# Examples\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\UseIs.csproj",
       "packagesPath": "C:\\Users\\test-ASRock-87\\.nuget\\packages\\",
-      "outputPath": "C:\\projects\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\obj\\",
+      "outputPath": "C:\\projects\\C# Examples\\RTTI_Reflection_Attributes[Chapter17]\\RTTI_Reflection_Attributes[Chapter17]\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\test-ASRock-87\\AppData\\Roaming\\NuGet\\NuGet.Config",
