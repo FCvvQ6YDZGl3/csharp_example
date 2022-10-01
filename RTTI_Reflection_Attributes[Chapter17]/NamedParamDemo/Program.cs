@@ -54,6 +54,7 @@ namespace NamedParamDemo
 
             Console.WriteLine("Приоритет: " + ra.Priority);
             Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
