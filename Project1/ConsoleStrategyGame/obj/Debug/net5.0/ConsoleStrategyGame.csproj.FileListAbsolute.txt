@@ -3,7 +3,6 @@ C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStr
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.runtimeconfig.json
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.runtimeconfig.dev.json
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.dll
-C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ref\ConsoleStrategyGame.dll
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ConsoleStrategyGame.pdb
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.csproj.AssemblyReference.cache
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,3 +13,4 @@ C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStr
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ref\ConsoleStrategyGame.dll
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.pdb
 C:\projects\C# Examples\Project1\ConsoleStrategyGame\obj\Debug\net5.0\ConsoleStrategyGame.genruntimeconfig.cache
+C:\projects\C# Examples\Project1\ConsoleStrategyGame\bin\Debug\net5.0\ref\ConsoleStrategyGame.dll

@@ -3,7 +3,6 @@ C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\EventDemo6.deps.jso
 C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\EventDemo6.runtimeconfig.json
 C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\EventDemo6.runtimeconfig.dev.json
 C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\EventDemo6.dll
-C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\ref\EventDemo6.dll
 C:\projects\C# Examples\Project1\EventDemo6\bin\Debug\net5.0\EventDemo6.pdb
 C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\EventDemo6.csproj.AssemblyReference.cache
 C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\EventDemo6.GeneratedMSBuildEditorConfig.editorconfig
@@ -14,3 +13,4 @@ C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\EventDemo6.dll
 C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\ref\EventDemo6.dll
 C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\EventDemo6.pdb
 C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\EventDemo6.genruntimeconfig.cache
+C:\projects\C# Examples\Project1\EventDemo6\obj\Debug\net5.0\refint\EventDemo6.dll
