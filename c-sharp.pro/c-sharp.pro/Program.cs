@@ -43,15 +43,7 @@ namespace c_sharp.pro
             answer = "";
             string[] numbers = { "2", "кг", "13", "17"};
 
-
-            /*
-            foreach(string n in numbers)
-            {
-                //answer += n.ToString() + " ";
-                Console.WriteLine(n);
-            }*/
             t.viewTable(numbers);
-            //Console.WriteLine(answer);
 
             answer = Console.ReadLine();
 
