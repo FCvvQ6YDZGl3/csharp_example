@@ -4,6 +4,19 @@ namespace S2
 {
     class Program
     {
+        static double getNumberAndCheckFromConsole()
+        {
+            string answer;
+            double number;
+            answer = Console.ReadLine();
+
+            if (!double.TryParse(answer, out number))
+            {
+                Console.WriteLine( "Вы ввели не число!");
+                number = getNumberAndCheckFromConsole();
+            }
+            return number;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("S2.1");
@@ -35,6 +48,13 @@ namespace S2
                 , Math.Pow(cubeEdge, 2));
 
             Console.WriteLine("S2.6");
+            Console.WriteLine("Окружность радиусом {0} имеет длину {1} и площадь {2}", rad, 2 * Math.PI * rad, Math.PI * Math.Pow(rad, 2));
+
+            Console.WriteLine("S2.7");
+            xVar = getNumberAndCheckFromConsole();
+            yVar = getNumberAndCheckFromConsole();
+            Console.WriteLine("Среднее арифметическое чисел {0} и {1} равно {2}", xVar, yVar, (xVar + yVar) / 2);
+            Console.WriteLine("Среднее геометрическое чисел {0} и {1} равно {2}", xVar, yVar, Math.Sqrt(xVar * yVar));
 
         }
     }
