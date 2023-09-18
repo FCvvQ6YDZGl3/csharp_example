@@ -90,8 +90,9 @@ namespace Project1.base_algoritm
         }
         private void bypassInBreadth()
         {
+            const ushort nodeCount = 7;
             Queue<int> Queue = new Queue<int>();
-            int[,] mas = new int[7, 7]
+            int[,] mas = new int[nodeCount, nodeCount]
                 {
                     {0, 1, 1, 0, 0, 0, 1},
                     {1, 0, 1, 1, 0, 0, 0},
@@ -101,9 +102,9 @@ namespace Project1.base_algoritm
                     {0, 0, 0, 0, 1, 0, 1},
                     {1, 0, 0, 0, 0, 1, 0},
                 };
-            int[] nodes = new int[7];
+            int[] nodes = new int[nodeCount];
 
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < nodeCount; i++)
                 nodes[i] = 0;
 
             Queue.Enqueue(0);
@@ -112,7 +113,7 @@ namespace Project1.base_algoritm
             {
                 int node = Queue.Dequeue();
                 nodes[node] = VertexState.passsed;
-                for (int j = 0; j < 7; j++)
+                for (int j = 0; j < nodeCount; j++)
                 {
                     if (mas[node, j] == 1 && nodes[j] == 0)
                     {
