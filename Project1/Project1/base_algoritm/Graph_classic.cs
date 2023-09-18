@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Project1.base_algoritm
 {
+    static class VertexState
+    {
+        public const int undetected = 0;
+        public const int detected = 1;
+        public const int passsed = 2;
+    }
     class Edge
     {
         public int begin;
@@ -105,13 +111,13 @@ namespace Project1.base_algoritm
             while (Queue.Count != 0)
             {
                 int node = Queue.Dequeue();
-                nodes[node] = 2;
+                nodes[node] = VertexState.passsed;
                 for (int j = 0; j < 7; j++)
                 {
                     if (mas[node, j] == 1 && nodes[j] == 0)
                     {
                         Queue.Enqueue(j);
-                        nodes[j] = 1;
+                        nodes[j] = VertexState.detected;
                     }
                 }
                 Console.WriteLine(node + 1);
@@ -131,9 +137,9 @@ namespace Project1.base_algoritm
                     new List<int> {5, 7},
                     new List<int> {1, 6}
                 };
-            int[] nodes = new int[7];
-
-            for (int i = 0; i < 7; i++)
+            int nodeCount = mas.Count();
+            int[] nodes = new int[nodeCount];
+            for (int i = 0; i < nodeCount; i++)
                 nodes[i] = 0;
 
             Queue.Enqueue(0);
@@ -141,14 +147,15 @@ namespace Project1.base_algoritm
             while (Queue.Count != 0)
             {
                 int node = Queue.Dequeue();
-                nodes[node] = 2;
+                nodes[node] = VertexState.passsed;
                 listNode = mas[node];
                 foreach (int item in listNode)
                 {
+                    Console.Write("<{0}>", item);
                     if (nodes[item-1] == 0)
                     {
                         Queue.Enqueue(item-1);
-                        nodes[item-1] = 1;
+                        nodes[item-1] = VertexState.detected;
                     }
                 }
                 Console.WriteLine(node + 1);
