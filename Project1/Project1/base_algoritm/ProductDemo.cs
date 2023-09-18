@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Dapper;
 using Project1.base_algoritm;
 
@@ -88,10 +89,12 @@ namespace Project1.graph_extension
             });
         }
 
+        private void printProduct(Product product)
+        {
+            Console.WriteLine(new String(' ', (int)level * 2) + "<{0}>", product.name);
+        }
         private void bypassInBreadthListProduct(Product product)
         {
-
-            int nodeCount = masP.Count;
 
             Queue<Product> Queue = new Queue<Product>();
             Queue.Enqueue(product);
@@ -102,7 +105,7 @@ namespace Project1.graph_extension
 
                 if(masP.ContainsKey(node))
                 {
-                    Console.WriteLine(new String(' ', (int)level * 2) + "<{0}>", node.name);
+                    printProduct(node);
                     level++;
                     listNode = masP[node];
 
@@ -113,7 +116,7 @@ namespace Project1.graph_extension
                         else
                         {
                             Queue.Enqueue(item);
-                            Console.WriteLine(new String(' ', (int) level * 2) + "<{0}>", item.name);
+                            printProduct(item);
                         }
                     }
                     level--;
