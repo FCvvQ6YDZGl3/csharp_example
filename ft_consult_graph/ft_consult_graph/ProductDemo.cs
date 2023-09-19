@@ -4,10 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Dapper;
-using Project1.base_algoritm;
 
-namespace Project1.graph_extension
+namespace ft_consult
 {
     class Product
     {
@@ -36,9 +34,9 @@ namespace Project1.graph_extension
         public byte count;
     }
 
-    internal class ProductDemo
+    class ProductDemo
     {
-        public uint level;
+        private uint level;
 
         Product bycycle;
         Product wheel;
@@ -143,14 +141,12 @@ namespace Project1.graph_extension
             while (Queue.Count != 0)
             {
                 int node = Queue.Dequeue();
-                nodes[node] = VertexState.passsed;
                 listNode = mas[node];
                 foreach (int item in listNode)
                 {
                     if (nodes[item - 1] == 0)
                     {
                         Queue.Enqueue(item - 1);
-                        nodes[item - 1] = VertexState.detected;
                     }
                 }
                 Console.WriteLine(node + 1);

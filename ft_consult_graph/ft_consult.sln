@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ft_consult_graph", "ft_consult_graph\ft_consult_graph.csproj", "{3DC5A181-A364-4696-92B4-52442A17A4A2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ft_consult", "ft_consult_graph\ft_consult.csproj", "{3DC5A181-A364-4696-92B4-52442A17A4A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
