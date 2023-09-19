@@ -14,15 +14,12 @@ namespace Project1.graph_extension
         public ushort id;
         public string name;
         public float price;
-        public sbyte VertexState;
 
         public Product(ushort id,string name,float price)
         {
             this.id = id;
             this.name = name;
             this.price = price;
-
-            this.VertexState = 0;
         }
     }
     class CompositeProduct
@@ -36,7 +33,7 @@ namespace Project1.graph_extension
     {
         public Product product;
         public Product productUp;
-        public sbyte count;
+        public byte count;
     }
 
     internal class ProductDemo
@@ -70,7 +67,7 @@ namespace Project1.graph_extension
                 trunk,
                 new Product(2, "Сиденье", 1200),
                 new Product(3, "Крыло", 500),
-                new Product(4, "Рама", 8000),
+                new Product(4, "Рама", 8000), 
                 wheel,
                 screw
             });
