@@ -1,10 +1,12 @@
 ﻿using System;
-using ft_consult;
-namespace ft_consult_graph
+using System.Collections.Generic;
+using System.Text;
+
+namespace ft_consult
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
             ProductDemo productDemo = new ProductDemo();
             productDemo.run();

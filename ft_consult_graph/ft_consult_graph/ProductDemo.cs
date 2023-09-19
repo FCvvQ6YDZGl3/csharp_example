@@ -20,18 +20,13 @@ namespace ft_consult
             this.price = price;
         }
     }
-    class CompositeProduct
+    class CompositeProduct : Product
     {
-        public ushort id;
-        public string name;
         public List<Product> products;
-    }
-
-    class ProductLinks
-    {
-        public Product product;
-        public Product productUp;
-        public byte count;
+        public CompositeProduct(ushort id, string name, float price, List<Product> products) : base(id, name, price)
+        {
+            
+        }
     }
 
     class ProductDemo
@@ -43,24 +38,45 @@ namespace ft_consult
         Product screw;
         Product trunk;
 
-        Dictionary<Product, List<Product>> masP;
-
+        Dictionary<Product, List<Product>> tree;
         public void run()
         {
-            createGraph();
-            bypassInBreadthListProduct(bycycle);
+            createTree();
+            //bypassInBreadthListProduct(bycycle);
         }
 
-        private void createGraph()
+        private void createTree()
         {
+            ProductStorage productStorage = new ProductStorage();
+            productStorage.init();
+
+            var products = productStorage.Izdels;
+            var links = productStorage.Links;
+
+            var superProducts =
+                from product in products
+                join link in links on product.Id equals link.izdelUp 
+                into sps
+                from sub in sps.DefaultIfEmpty()
+                select new
+                {
+                    product.Name,
+                    
+                };
+
+            foreach(var sp in superProducts)
+            {
+                Console.WriteLine(sp.izdelUp);
+            }
+
             bycycle = new Product(0, "Велосипед", 29900);
             wheel = new Product(5, "Колесо", 1000);
             screw = new Product(10, "Гайка", 8);
             trunk = new Product(4, "Багажник", 1500);
 
 
-            masP = new Dictionary<Product, List<Product>>();
-            masP.Add(bycycle, new List<Product> {
+            tree = new Dictionary<Product, List<Product>>();
+            tree.Add(bycycle, new List<Product> {
                 new Product(1, "Руль", 3000),
                 trunk,
                 new Product(2, "Сиденье", 1200),
@@ -69,14 +85,14 @@ namespace ft_consult
                 wheel,
                 screw
             });
-            masP.Add(wheel, new List<Product> {
+            tree.Add(wheel, new List<Product> {
                 new Product(6, "Спицы", 50),
                 new Product(7, "Шина", 300),
                 new Product(8, "Резиновая камера", 200),
                 new Product(9, "Болт", 12),
                 screw
             });
-            masP.Add(trunk, new List<Product> {
+            tree.Add(trunk, new List<Product> {
                 new Product(6, "Проволока", 50),
                 new Product(7, "Пружина", 300),
                 new Product(9, "Болт", 12),
@@ -98,15 +114,15 @@ namespace ft_consult
             {
                 Product node = Queue.Dequeue();
 
-                if(masP.ContainsKey(node))
+                if(tree.ContainsKey(node))
                 {
                     printProduct(node);
                     level++;
-                    listNode = masP[node];
+                    listNode = tree[node];
 
                     foreach (Product item in listNode)
                     {
-                        if (masP.ContainsKey(item))
+                        if (tree.ContainsKey(item))
                             bypassInBreadthListProduct(item);
                         else
                         {
@@ -116,40 +132,6 @@ namespace ft_consult
                     }
                     level--;
                 }
-            }
-        }
-        private void bypassInBreadthList()
-        {
-            Queue<int> Queue = new Queue<int>();
-            List<int>[] mas = new List<int>[]
-                {
-                    new List<int> {2, 3, 7},
-                    new List<int> {1, 3, 4},
-                    new List<int> {1, 2},
-                    new List<int> {2, 5},
-                    new List<int> {4, 6},
-                    new List<int> {5, 7},
-                    new List<int> {1, 6}
-                };
-            int nodeCount = mas.Length;
-            int[] nodes = new int[nodeCount];
-            for (int i = 0; i < nodeCount; i++)
-                nodes[i] = 0;
-
-            Queue.Enqueue(0);
-            List<int> listNode;
-            while (Queue.Count != 0)
-            {
-                int node = Queue.Dequeue();
-                listNode = mas[node];
-                foreach (int item in listNode)
-                {
-                    if (nodes[item - 1] == 0)
-                    {
-                        Queue.Enqueue(item - 1);
-                    }
-                }
-                Console.WriteLine(node + 1);
             }
         }
         public ProductDemo()

@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 
-namespace Tutorial.SqlConn
+namespace ft_consult.connection
 {
     class DBUtils
     {
         public static SqlConnection GetDBConnection()
         {
-            string datasource = @"olap-server";
+            string datasource = @"MAIN-WORK";
 
-            string database = "DevSandBox";
+            string database = "solving_test";
 
             return DBSQLServerUtils.GetDBConnection(datasource, database);
         }
