@@ -8,22 +8,22 @@ DROP TABLE IF EXISTS Izdel
 GO
 CREATE TABLE Izdel
 (
-	Id BIGINT IDENTITY PRIMARY KEY,
-	Name VARCHAR(100) UNIQUE,
-	Price DECIMAL(20, 2)
+  Id BIGINT IDENTITY PRIMARY KEY,
+  Name VARCHAR(100) UNIQUE,
+  Price DECIMAL(20, 2)
 )
 
 DROP TABLE IF EXISTS Links
 GO
 CREATE TABLE Links
 (
-	IzdelUp BIGINT,
-	Izdel BIGINT,
-	kol INT,
-	CONSTRAINT FK_Links_IzdelUp FOREIGN KEY([IzdelUp])
-	REFERENCES [dbo].Izdel(Id),
-	CONSTRAINT FK_Links_Izdel FOREIGN KEY([Izdel])
-	REFERENCES [dbo].Izdel(Id)
+  IzdelUp BIGINT,
+  Izdel BIGINT,
+  kol INT,
+  CONSTRAINT FK_Links_IzdelUp FOREIGN KEY([IzdelUp])
+  REFERENCES [dbo].Izdel(Id),
+  CONSTRAINT FK_Links_Izdel FOREIGN KEY([Izdel])
+  REFERENCES [dbo].Izdel(Id)
 )
 GO
 
