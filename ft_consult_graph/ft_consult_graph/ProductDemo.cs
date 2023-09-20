@@ -85,7 +85,14 @@ namespace ft_consult
 
         public void addNewProducts(string name)
         {
-            Product newPrd = new Product(0, name, 0.00);
+            Izdel izdel = new Izdel
+            {
+                Name = name,
+                Price = 100.00
+            };
+            productStorage.addInIzdel(izdel);
+
+            Product newPrd = new Product((ushort)izdel.Id, izdel.Name, 0.00);
             newProducts.Add(newPrd);
             products.Add(newPrd);
         }
@@ -134,9 +141,9 @@ namespace ft_consult
             {
                 Product node = Queue.Dequeue();
 
-                printProduct(node);
                 if (tree.ContainsKey(node))
                 {
+                    printProduct(node);
                     level++;
                     listNode = tree[node];
 

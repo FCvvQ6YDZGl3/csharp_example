@@ -4,6 +4,8 @@ using System.Text;
 using ft_consult.connection;
 using Microsoft.Data.SqlClient;
 using System.Data.Common;
+using Microsoft.Data.SqlTypes;
+using System.Data;
 
 namespace ft_consult
 {
@@ -46,6 +48,49 @@ namespace ft_consult
             {
                 return LinksField;
             }
+        }
+        public void addInIzdel(Izdel newIzdel)
+        {
+
+
+            connection = DBUtils.GetDBConnection();
+            connection.Open();
+            try
+            {
+                string sql = "INSERT dbo.Izdel VALUES (@name, @price); SET @id = SCOPE_IDENTITY();";
+                SqlCommand cmd = getSqlCommand(sql);
+
+                SqlCommand command = new SqlCommand(sql, connection);
+
+                SqlParameter nameParam = new SqlParameter("@name", newIzdel.Name);
+                command.Parameters.Add(nameParam);
+
+                SqlParameter priceParam = new SqlParameter("@price", newIzdel.Price);
+                command.Parameters.Add(priceParam);
+
+                SqlParameter idParam = new SqlParameter
+                {
+                    ParameterName = "@id",
+                    SqlDbType = SqlDbType.Int,
+                    Direction = ParameterDirection.Output
+                };
+                command.Parameters.Add(idParam);
+
+                command.ExecuteNonQuery();
+                newIzdel.Id = (int)idParam.Value;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: " + e);
+                Console.WriteLine(e.StackTrace);
+            }
+            finally
+            {
+                connection.Close();
+                connection.Dispose();
+                connection = null;
+            }
+
         }
         public void init()
         {
