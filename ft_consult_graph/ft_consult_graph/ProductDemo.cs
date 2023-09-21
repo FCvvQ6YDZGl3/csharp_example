@@ -141,21 +141,15 @@ namespace ft_consult
             {
                 Product node = Queue.Dequeue();
 
+                printProduct(node);
                 if (tree.ContainsKey(node))
                 {
-                    printProduct(node);
                     level++;
                     listNode = tree[node];
 
                     foreach (Product item in listNode)
                     {
-                        if (tree.ContainsKey(item))
                             directTreeTraversal(item);
-                        else
-                        {
-                            Queue.Enqueue(item);
-                            printProduct(item);
-                        }
                     }
                     level--;
                 }
