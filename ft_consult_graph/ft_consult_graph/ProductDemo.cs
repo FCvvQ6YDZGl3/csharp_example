@@ -133,26 +133,17 @@ namespace ft_consult
         }
         private void directTreeTraversal(Product product)
         {
-
-            Queue<Product> Queue = new Queue<Product>();
-            Queue.Enqueue(product);
             List<Product> listNode;
-            while (Queue.Count != 0)
+            printProduct(product);
+            if (tree.ContainsKey(product))
             {
-                Product node = Queue.Dequeue();
-
-                printProduct(node);
-                if (tree.ContainsKey(node))
+                level++;
+                listNode = tree[product];
+                foreach (Product item in listNode)
                 {
-                    level++;
-                    listNode = tree[node];
-
-                    foreach (Product item in listNode)
-                    {
-                            directTreeTraversal(item);
-                    }
-                    level--;
+                    directTreeTraversal(item);
                 }
+                level--;
             }
         }
         public ProductDemo()
