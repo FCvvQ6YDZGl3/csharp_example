@@ -7,9 +7,8 @@ using Project1.Chapter12;
 using Project1.Chapter13;
 using Project1.Chapter14;
 using Project1.Chapter15;
-using Project1.fantasticExercise;
 using Project1.base_algoritm;
-using Project1.graph_extension;
+
 
 namespace Project1
 {
@@ -17,7 +16,7 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-            ProductDemo runableObject = new ProductDemo();
+            OrdinaryGlass runableObject = new OrdinaryGlass();
             runableObject.run();
             Console.ReadKey();
         }

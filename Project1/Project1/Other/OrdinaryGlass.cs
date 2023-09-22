@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Project1.fantasticExercise
+namespace Project1
 {
     class Capacity
     {
