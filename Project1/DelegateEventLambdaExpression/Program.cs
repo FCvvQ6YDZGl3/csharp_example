@@ -1,4 +1,5 @@
 ﻿using System;
+using Project1.Chapter15;
 
 namespace DelegateEventLambdaExpression
 {
@@ -6,7 +7,9 @@ namespace DelegateEventLambdaExpression
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            VarCapture runableObject = new VarCapture();
+            runableObject.run();
+            Console.ReadKey();
         }
     }
 }
