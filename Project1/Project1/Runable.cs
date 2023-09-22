@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Project1.Chapter12;
-using Project1.Chapter13;
-using Project1.Chapter14;
 using Project1.base_algoritm;
 
 
