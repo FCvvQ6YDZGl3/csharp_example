@@ -38,7 +38,6 @@ namespace c_sharp.pro
 
             t = new Tabulator(2);
             string answer;
-            string query;
             double number;
             answer = "";
             string[] numbers = { "2", "кг", "13", "17"};
