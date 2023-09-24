@@ -159,6 +159,13 @@ namespace S2
             });
             exercices.Add("S2.10", exr);
 
+            exr = new Exercise();
+            exr.inputText = new List<string> { "Введите катет a", "Введите катет b" };
+            exr.runProgrammExercise += new RunProgrammExercise((a) => {
+                Console.WriteLine("Гипотенуза треугольника с катетами {0} и {1} равна {2}",a[0], a[1], Math.Sqrt(Math.Pow(a[0], 2) + Math.Pow(a[1], 2)));
+            });
+            exercices.Add("S2.11", exr);
+
             foreach (var kvp in exercices)
             {
                 Console.WriteLine(kvp.Key);
