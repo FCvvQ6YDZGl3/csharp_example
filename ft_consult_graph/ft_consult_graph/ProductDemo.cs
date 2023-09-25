@@ -137,9 +137,10 @@ namespace ft_consult
                 {
                     case "view product tree":
                         createTrees();
+                        superProducts = selectSuperProduct().ToList();
                         foreach (var sp in superProducts)
                         {
-                            directTreeTraversal(new IncludedProduct(sp, 1));
+                            directTreeTraversal(sp, 1);
                         }
                         break;
                     case "add product":
@@ -204,7 +205,7 @@ namespace ft_consult
             return finalProduct;
         }
 
-        private void createTrees()
+        private IEnumerable<Product> selectSuperProduct()
         {
             var links = productStorage.Links;
 
@@ -216,6 +217,12 @@ namespace ft_consult
                 from p in products
                 join sp in productSuperIds on p.Id equals sp
                 select p;
+            return superProducts;
+        }
+
+        private void createTrees()
+        {
+            var links = productStorage.Links;
 
             //здесь инициализируем объекты состоящие из других.
             var cp = from p in products.Except(this.selectFinalProduct())
@@ -242,21 +249,21 @@ namespace ft_consult
             }
         }
 
-        private void printProduct(IncludedProduct included)
+        private void printProduct(Product included, sbyte count)
         {
-            Console.WriteLine(new String(' ', level * 2) + "<{0}>" + " {1} ({2})", included.Product.Name, included.Product.Price, included.Count);
+            Console.WriteLine(new String(' ', level * 2) + "<{0}>" + " {1} ({2})", included.Name, included.Price, count);
         }
-        private void directTreeTraversal(IncludedProduct included)
+        private void directTreeTraversal(Product included, sbyte count)
         {
-            printProduct(included);
-            if (trees.ContainsKey(included.Product))
+            printProduct(included, count);
+            if (trees.ContainsKey(included))
             {
                 level++;
                 List<IncludedProduct> listNode;
-                listNode = trees[included.Product];
+                listNode = trees[included];
                 foreach (IncludedProduct item in listNode)
                 {
-                    directTreeTraversal(item);
+                    directTreeTraversal(item.Product, item.Count);
                 }
                 level--;
             }
