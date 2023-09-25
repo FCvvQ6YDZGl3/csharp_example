@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -10,24 +11,102 @@ namespace ft_consult
 {
     class Product
     {
-        public ushort id;
-        public string name;
-        public double price;
+        public ushort idField;
+        public string nameField;
+        public double priceField;
 
-        public Product(ushort id,string name, double price)
+        public Product(ushort id, string name, double price)
         {
-            this.id = id;
-            this.name = name;
-            this.price = price;
+            this.idField = id;
+            this.nameField = name;
+            this.priceField = price;
+        }
+
+        public ushort Id
+        {
+            get
+            {
+                return idField;
+            }
+        }
+        public string Name
+        {
+            get
+            {
+                return nameField;
+            }
+        }
+        public virtual double Price
+        {
+            get
+            {
+                return 1;
+            }
         }
     }
+
     class CompositeProduct : Product
     {
-        public List<Product> products;
-        public CompositeProduct(ushort id, string name, double price, List<Product> products) : base(id, name, price)
+        private List<IncludedProduct> products;
+        public CompositeProduct(ushort id, string name, double price, List<IncludedProduct> products) : base(id, name, price)
         {
-            
+            this.products = products;
         }
+        public override double Price
+        {
+            get
+            {
+                double price = priceField;
+                foreach (var ip in products)
+                {
+                    price += ip.Count * ip.Product.Price;
+                }
+                return price;
+            }
+        }
+        public void AddProduct(IncludedProduct includedProduct)
+        {
+            products.Add(includedProduct);
+        }
+
+        public void AddProduct(List<IncludedProduct> includedProducts)
+        {
+            products.AddRange(includedProducts);
+        }
+        public List<IncludedProduct> Products
+        {
+            get
+            {
+                return products;
+            }
+        }
+    }
+    class IncludedProduct
+    {
+        private Product productField;
+        private sbyte countField;
+
+        public IncludedProduct(Product product, sbyte count)
+        {
+            productField = product;
+            countField = count;
+        }
+        public Product Product
+        {
+            get
+            {
+                return productField;
+            }
+        }
+
+        public sbyte Count
+        {
+            get
+            {
+                return countField;
+            }
+        }
+
     }
 
     class ProductDemo
@@ -41,7 +120,10 @@ namespace ft_consult
         List<Product> products;
 
         IEnumerable<Product> superProducts;
-        Dictionary<Product, List<Product>> tree;
+        Dictionary<Product, List<IncludedProduct>> trees;
+
+        List<CompositeProduct> compositeProducts;
+
 
         public void run()
         {
@@ -54,10 +136,10 @@ namespace ft_consult
                 switch (userResponse)
                 {
                     case "view product tree":
-                        createTree();
+                        createTrees();
                         foreach (var sp in superProducts)
                         {
-                            directTreeTraversal(sp);
+                            directTreeTraversal(new IncludedProduct(sp, 1));
                         }
                         break;
                     case "add product":
@@ -68,6 +150,15 @@ namespace ft_consult
                         break;
                     case "clear":
                         Console.Clear();
+                        break;
+                    case "view final product":
+                        foreach (var fp in this.selectFinalProduct())
+                        {
+                            Console.WriteLine(fp.Name);
+                        }
+                        break;
+                    case "create trees":
+                        createTrees();
                         break;
                     case "q":
                     case "quit":
@@ -97,49 +188,73 @@ namespace ft_consult
             products.Add(newPrd);
         }
 
-        private void createTree()
+        private IEnumerable<Product> selectFinalProduct()
         {
             var links = productStorage.Links;
 
-            var productIds = from p in products select p.id;
+            var productIds = from p in products select p.Id;
+            var linkIzdelUpIds = from l in links select (ushort)l.izdelUp;
+            var productFinalIds = productIds.Except(linkIzdelUpIds);
+
+            var finalProduct =
+                from p in products
+                join fp in productFinalIds on p.Id equals fp
+                select p;
+
+            return finalProduct;
+        }
+
+        private void createTrees()
+        {
+            var links = productStorage.Links;
+
+            var productIds = from p in products select p.Id;
             var linkIds = from l in links select (ushort)l.izdel;
             var productSuperIds = productIds.Except(linkIds);
+
             superProducts =
                 from p in products
-                join sp in productSuperIds on p.id equals sp
+                join sp in productSuperIds on p.Id equals sp
                 select p;
 
-            tree = new Dictionary<Product, List<Product>>();
+            //здесь инициализируем объекты состоящие из других.
+            var cp = from p in products.Except(this.selectFinalProduct())
+                     select new CompositeProduct(p.Id, p.Name, p.Price, new List<IncludedProduct>());
 
-            foreach (var curp in products)
+            compositeProducts = cp.ToList();
+            var finalProducts = selectFinalProduct().ToList();
+            //создаем список продуктов состоящий из двух списков - композитные продукты и финальные.
+            products = finalProducts;
+            products.AddRange(compositeProducts);
+
+            trees = new Dictionary<Product, List<IncludedProduct>>();
+            //Устанавливаем связи между ними, перебирая каждый композитный продукт
+            foreach (var curp in compositeProducts)
             {
-                if (links.Where(l => l.izdelUp == curp.id).Count() == 0)
-                {
-                    continue;
-                }
-                
                 var compositePart = from p in products
-                join l in links on p.id equals l.izdel
-                where l.izdelUp == curp.id
-                select p;
+                                    join l in links on p.Id equals l.izdel
+                                    where l.izdelUp == curp.Id
+                                    select new IncludedProduct(p, (sbyte) l.kol);
+                var compositePartList = compositePart.ToList();
 
-                tree.Add(curp, compositePart.ToList());
+                curp.AddProduct(compositePartList);
+                trees.Add(curp, compositePartList);
             }
         }
 
-        private void printProduct(Product product)
+        private void printProduct(IncludedProduct included)
         {
-            Console.WriteLine(new String(' ', (int)level * 2) + "<{0}>", product.name);
+            Console.WriteLine(new String(' ', level * 2) + "<{0}>" + " {1} ({2})", included.Product.Name, included.Product.Price, included.Count);
         }
-        private void directTreeTraversal(Product product)
+        private void directTreeTraversal(IncludedProduct included)
         {
-            List<Product> listNode;
-            printProduct(product);
-            if (tree.ContainsKey(product))
+            printProduct(included);
+            if (trees.ContainsKey(included.Product))
             {
                 level++;
-                listNode = tree[product];
-                foreach (Product item in listNode)
+                List<IncludedProduct> listNode;
+                listNode = trees[included.Product];
+                foreach (IncludedProduct item in listNode)
                 {
                     directTreeTraversal(item);
                 }
