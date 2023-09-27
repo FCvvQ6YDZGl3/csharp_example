@@ -47,7 +47,6 @@ namespace Project1.Chapter15
             StrMod reverseStr = MultiCastDemo.Reverse;
             string str = "Это простой тест.";
 
-            List<StrMod> strMods = new List<StrMod>();
             strOp = replaceSp;
             strOp += reverseStr;
 

@@ -166,6 +166,14 @@ namespace S2
             });
             exercices.Add("S2.11", exr);
 
+            exr = new Exercise();
+            exr.inputText = new List<string> { "Введите внешний радиус", "Введите внутренний радиус" };
+            exr.runProgrammExercise += new RunProgrammExercise((a) =>
+            {
+                Console.WriteLine("Площадь кольца с внешним {0} и внутренним радиусом {1} равна {2}", a[0], a[1], Math.PI * (Math.Pow(a[0], 2) - Math.Pow(a[1], 2)));
+            });
+            exercices.Add("S2.12", exr);
+
             foreach (var kvp in exercices)
             {
                 Console.WriteLine(kvp.Key);
