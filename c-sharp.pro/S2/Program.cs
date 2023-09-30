@@ -174,6 +174,14 @@ namespace S2
             });
             exercices.Add("S2.12", exr);
 
+            exr = new Exercise();
+            exr.inputText = new List<string> { "Введите катет a", "Введите катет b" };
+            exr.runProgrammExercise += new RunProgrammExercise((a) =>
+            {
+                Console.WriteLine("Прямоугольный треугольник с катетами {0} и {1} имеет периметр {2}", a[0], a[1], Math.Sqrt(Math.Pow(a[0], 2) + Math.Pow(a[1], 2)) + a[0] + a[1]);
+            });
+            exercices.Add("S2.13A", exr);
+
             foreach (var kvp in exercices)
             {
                 Console.WriteLine(kvp.Key);
