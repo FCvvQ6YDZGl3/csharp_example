@@ -182,6 +182,15 @@ namespace S2
             });
             exercices.Add("S2.13A", exr);
 
+            exr = new Exercise();
+            exr.inputText = new List<string> { "Введите верхнее основание трапеции", "Ввелите нижнее основание трапеции", "Введите высоту трапеции" };
+            exr.runProgrammExercise += new RunProgrammExercise((a) =>
+            {
+                Console.WriteLine("Равнобедренная трапеция с основаниями {0} и {1}, высотой {2}  имеет периметр {3}",
+                    a[0], a[1], a[2], Math.Sqrt(Math.Pow((a[1] - a[0]) / 2, 2) + Math.Pow(a[2], 2)) * 2 + a[0] + a[1]);
+            });
+            exercices.Add("S2.14", exr);
+
             foreach (var kvp in exercices)
             {
                 Console.WriteLine(kvp.Key);
