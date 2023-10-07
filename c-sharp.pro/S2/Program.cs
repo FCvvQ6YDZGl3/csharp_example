@@ -191,6 +191,14 @@ namespace S2
             });
             exercices.Add("S2.14", exr);
 
+            exr = new Exercise();
+            exr.inputText = new List<string> { "Введите сторону а", "Введите сторону b" };
+            exr.runProgrammExercise += new RunProgrammExercise((a) =>
+            {
+                Console.WriteLine("Прямоугольник со сторанами {0} и {1} имеет периметр {2} и длину диагонали {3}",
+                    a[0], a[1], (a[0] + a[1]) * 2, Math.Sqrt(Math.Pow(a[0], 2) + Math.Pow(a[1], 2)));
+            });
+
             foreach (var kvp in exercices)
             {
                 Console.WriteLine(kvp.Key);
